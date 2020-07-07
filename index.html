@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>REST|TODOOLEAN</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+        <input id="new-todo" type="text" placeholder="Aggiunge qualcosa da fare.">
+        <button id="add-button">INVIA</button>
+        <h3>Todo</h3>
+      <ul id="todo-list">
+
+      </ul>
+
+    </div>
+
+    <!-- TEMPLATE -->
+  </script>
+
+  <script id="todo-template"  type="text/x-handlebars-template">
+    <li id-todo="{{ id }}">{{ text }}<button class="delete-button">DELETE</button></li>
+  </script>
+  <!-- END TEMPLATE -->
+
+
+
+    <!-- SCRIPT -->
+  <script src="js/script.js">
+
+  </script>
+  <!-- END SCRIPT -->
+
+  </body>
+</html>

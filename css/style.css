@@ -18,6 +18,7 @@ input {
   padding-left: 20px;
 }
 li {
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
@@ -60,4 +61,5 @@ li {
   padding: 50px;
   background: lightgreen;
   width: 60%;
+  overflow-y: scroll;
 }

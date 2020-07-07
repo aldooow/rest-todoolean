@@ -33,8 +33,11 @@
 
       </div>
       <div class="right-column">
+        <!-- INPUT -->
         <input id="new-todo" type="text" placeholder="Aggiunge qualcosa da fare.">
+        <!-- TASTO INVIO -->
         <button id="add-button"><b>INVIA</b></button>
+        <!-- ToDo Lista -->
         <h3>PROMEMORIA</h3>
       <ul id="todo-list">
 
@@ -47,15 +50,19 @@
 
     <!-- TEMPLATE -->
   </script>
-
   <script id="todo-template"  type="text/x-handlebars-template">
-    <li id-todo="{{ id }}"><p><i class="fas fa-caret-down"></i> {{ text }}</p><div class="delete-button"><i class="fas fa-trash-alt"></i></div></li>
+    <li id-todo="{{ id }}">
+      <p>
+        <!-- Elemento ToDo -->
+        <i class="fas fa-caret-down"></i> {{ text }}
+      </p>
+      <!-- Tasto DELETE -->
+      <div class="delete-button"><i class="fas fa-trash-alt"></i></div>
+    </li>
   </script>
   <!-- END TEMPLATE -->
 
-
-
-    <!-- SCRIPT -->
+  <!-- SCRIPT -->
   <script src="js/script.js">
 
   </script>

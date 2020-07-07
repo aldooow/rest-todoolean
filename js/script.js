@@ -1,10 +1,20 @@
 $(document).ready(
   function(){
+
+    // CHIAMATA AJAX.
     getAjax();
 
     // AGGIUNGERE UN ELEMENTO NUOVO.
+    // --> Click su tasto.
     $(document).on('click', '#add-button', function(){
       postAjax();
+    });
+    // --> Con Tasto Enter.
+    $('#new-todo').keypress(function(event){
+      var keycode = (event.keyCode ? event.keyCode : event.which);
+      if(keycode == '13'){
+        postAjax();
+      }
     });
 
     // ELIMINARE UN ELEMENTO DELLA LISTA.
@@ -13,10 +23,9 @@ $(document).ready(
       deleteAjax(idAttr);
     });
 
-
   });
 
-// -----------------------
+// ----------------------->
 // FUNZIONE: getAjax();
 // Questa funzione fa una chiamata Ajax.
 function getAjax(){
@@ -42,8 +51,7 @@ function getAjax(){
   });
 };
 
-
-// -----------------------
+// ----------------------->
 // FUNZIONE: postAjax();
 // Questa funzione Aggiunge un elemento alla chiamata Ajax.
 function postAjax(){
@@ -72,10 +80,9 @@ function postAjax(){
     // Reset l'Input.
     $('#new-todo').val('')
   }
-
 };
 
-// -----------------------
+// ----------------------->
 // FUNZIONE: deleteAjax();
 // Questa funzione elimina un elemento alla chiamata Ajax.
 // --> id: è un numero, attr univoco.

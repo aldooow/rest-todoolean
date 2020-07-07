@@ -13,12 +13,35 @@
   <body>
     <div class="wrapper">
 
+      <div class="left-column">
+        <div class="box">
+          <i class="fas fa-clock"></i>
+          PROG <b>9</b>
+        </div>
+        <div class="box">
+          <i class="far fa-calendar-alt"></i>
+          OGGI <b>2</b>
+        </div>
+        <div class="box">
+          <i class="fas fa-flag"></i>
+          CONT <b>2</b>
+        </div>
+        <div class="box">
+          <i class="fas fa-inbox"></i>
+          ALL <b>13</b>
+        </div>
+
+      </div>
+      <div class="right-column">
         <input id="new-todo" type="text" placeholder="Aggiunge qualcosa da fare.">
-        <button id="add-button">INVIA</button>
-        <h3>Todo</h3>
+        <button id="add-button"><b>INVIA</b></button>
+        <h3>PROMEMORIA</h3>
       <ul id="todo-list">
 
       </ul>
+
+      </div>
+
 
     </div>
 
@@ -26,7 +49,7 @@
   </script>
 
   <script id="todo-template"  type="text/x-handlebars-template">
-    <li id-todo="{{ id }}">{{ text }}<button class="delete-button">DELETE</button></li>
+    <li id-todo="{{ id }}"><p><i class="fas fa-caret-down"></i> {{ text }}</p><div class="delete-button"><i class="fas fa-trash-alt"></i></div></li>
   </script>
   <!-- END TEMPLATE -->
 

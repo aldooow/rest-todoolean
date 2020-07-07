@@ -7,6 +7,57 @@
 /* END RESET */
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   background: lightgrey;
+}
+input {
+  border-radius: 5px;
+  height: 30px;
+  width: 60%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border-bottom: 1px solid grey;
+}
+#add-button {
+  background: pink;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.wrapper {
+  display: flex;
+  background-color: white;
+  width: 70%;
+  height: calc(100vh - 200px);
+  margin: 100px auto;
+  border: 3px solid Black;
+  border-radius: 15px;
+}
+.left-column {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: lightblue;
+  width: 40%;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: calc(50% - 10px);
+  height: 100px;
+  background: white;
+}
+.right-column {
+  border-left: 1px solid black;
+  padding: 50px;
+  background: lightgreen;
+  width: 60%;
 }
